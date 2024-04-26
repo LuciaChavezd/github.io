@@ -1,118 +1,247 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle | CAC-MOVIES</title>
-   
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CAC-MOVIES</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
-    <header id="main">
-        <nav >
-            <a href="../index.html">
-              
-                <span>CAC-Movies</span>
-            </a>
-            <ul >
-                <li class="listaItem"><a class="linkNav" href="">Tendencias</a></li>
-                <li class="listaItem"><a class="linkNav" href="registrarse.html">Registrarse</a></li>
-                <li class="listaItem"><a class="linkNav iniciarSesion" href="">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main >
-      <section >
-        <div >
-            <div >
-                <img src="images/mario.jpg" alt="mario pelicula 2023">
-            </div>
-            <div >
-                <h1>The Super Mario Bros. Movie (2023)</h1>
-                <p>04/05/2023 • Animation, Family, Adventure, Fantasy, Comedy • 1h 33m</p>
-                <h2>Overview</h2>
-                <p>While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.</p>
-                <div >
-                    <div>
-                        <h3>Aaron Horvath</h3>
-                        <p>Director</p>
-                    </div>
-                    <div>
-                        <h3>Michael Jelenic</h3>
-                        <p>Director</p>
-                    </div>
-                    <div>
-                        <h3>Matthew Fogel</h3>
-                        <p>Writer</p>
-                    </div>
+    <header >
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Incio</a>
+                  <a class="nav-link" href="registrarse.html">Registrarse</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                 <!--<a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
                 </div>
-               
+              </div>
             </div>
-        </div>
-       
+          </nav>
+    </header>
+    <main>
+        <section >
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/banner-bg.jpg" class="d-block w-100" alt="imagen">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Películas y series ilimitadas en un solo lugar</h2>
+                      <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+        </section>
+        <section >
+            <h2 >¿Qué estas buscando para ver?</h2>
+            <form >
+                <input  type="text" placeholder="Buscar..."/>
+                <input  type="submit" value="Buscar">
+            </form>
+           
 
-      </section>
+        </section>
+        <hr>
+        <section >
+            <h3 >Las tendencias de hoy</h3>
+           <!--prueba columnas -->
+           <div class="container">
+            <div class="row">
+              <div class="col-3">.col-9</div>
+              <div class="col-5">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+              <div class="col-4">.col-6<br>Subsequent columns continue along the new line.</div>
+            </div>
+            <div class="row">
+                <div class="col-3">fila 2</div>
+                <div class="col-5">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+                <div class="col-4">.col-6<br>Subsequent columns continue along the new line.</div>
+              </div>
+          </div>
+           <!--fin prueba  -->
 
-      <section >
-        <div >
-            <h2>Ver trailer</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/RjNcTBXTk4I?si=7fnK8NtlxetW0d1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-        </div>
-        <div>
             <div >
-                <ul>
-                    <li><a href="https://www.facebook.com/supermariomovie" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/supermariomovie" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://instagram.com/supermariomovie/"><i class="fab fa-instagram" target="_blank"></i></a></li>
-                    <li><a href="https://www.thesupermariobros.movie/"><i class="fas fa-link" target="_blank"></i></a></li>
-                </ul>
+                <div >
+                    <a href="detalle.html">
+                        <img  src="images/peli_1.jpg" alt="The Beekeeper" title="Pelicula">
+                    </a>
+                   <h4>The Beekeeper</h4>
+                   <p class="parrafo">Este es un <span style="color:green">parrafo</span> de prueba</p>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_2.jpg" alt="Badland Hunters">
+                    </a>
+                    <h4>Badland Hunters</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_3.jpg" alt="The Marvels">
+                    </a>
+                    <h4>The Marvels</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_4.jpg" alt="Wonka">
+                    </a>
+                   
+                    <h4>Wonka</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_5.jpg" alt="Aquaman and the Lost Kingdom">
+                    </a>
+                    <h4>Aquaman and the Lost Kingdom</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_6.jpg" alt="Migration">
+                    </a>
+                    <h4>Migration</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_7.jpg" alt="Sixty Minutes">
+                    </a>
+                    
+                    <h4>Sixty Minutes</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_8.jpg" alt="Wish">
+                    </a>
+                   
+                    <h4>Wish</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_9.jpg" alt="The Masked Saint">
+                    </a>
+                  
+                    <h4>The Masked Saint</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_10.jpg" alt="Due Justice">
+                    </a>
+                   
+                    <h4>Due Justice</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_11.jpg" alt="Orion and the Darke">
+                    </a>
+                   
+                    <h4>Orion and the Dark</h4>
+                </div>
+                <div  >
+                    <a href="detalle.html">
+                     <img  src="images/peli_12.jpg" alt="Genghis Khan">
+                    </a>
+                    
+                    <h4>Genghis Khan</h4>
+                </div>
             </div>
-            <div >
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Info</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Status</strong></td>
-                            <td>Released</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Original Language</strong></td>
-                            <td>English</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Budget</strong></td>
-                            <td> $100.000.000,00</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Revenue</strong></td>
-                            <td> $1.347.013.866,00</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <button >Anterior</button>  
+            <button >Siguiente</button>
+        </section>
+        <hr>
+        <section >
+            <h3 >Las más aclamadas</h3>
+             <div >
+                <div >
+                    <img  src="images/aclamada_1.jpg" alt="aclamada_1">
+                </div>
+                <div >
+                    <img  src="images/aclamada_2.jpg" alt="aclamada_2">
+                </div>
+                <div >
+                    <img  src="images/aclamada_3.jpg" alt="aclamada_3">
+                </div>
+                <div >
+                    <img  src="images/aclamada_4.jpg" alt="aclamada_4">
+                </div>
+                <div >
+                    <img  src="images/aclamada_5.jpg" alt="aclamada_5">
+                </div>
+                <div >
+                    <img src="images/aclamada_6.jpg" alt="aclamada_6">
+                </div>
+                <div >
+                    <img  src="images/aclamada_7.jpg" alt="aclamada_7">
+                </div>
+                <div >
+                    <img  src="images/aclamada_8.jpg" alt="aclamada_8">
+                </div>
+                <div >
+                    <img  src="images/aclamada_9.jpg" alt="aclamada_9">
+                </div>
+                <div >
+                    <img  src="images/aclamada_10.jpg" alt="aclamada_10">
+                </div>
+                <div >
+                    <img  src="images/aclamada_11.jpg" alt="aclamada_11">
+                </div>
+                <div >
+                    <img src="images/aclamada_12.jpg" alt="aclamada_12">
+                </div>               
             </div>
-
-        </div>
-
-      </section>
+        </section>
 
     </main>
     <footer >
         <nav >
             <ul >
-                <li ><a  href="">Términos y condiciones</a></li>
+                <li ><a href="">Términos y condiciones</a></li>
                 <li ><a  href="">Preguntas frecuentes</a></li>
                 <li ><a  href="">Ayuda</a></li>
                 <li ><a  href="">Administrador Peliculas</a></li>
             </ul>
         </nav>
-        <a href="#main" >
+        <a href="#main" class="flechaArriba">
             <img src="images/flecha-hacia-arriba.png" alt="ir arriba flecha">
         </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
